@@ -23,21 +23,22 @@
 #include <iostream>
 using namespace std;
 
-    int main(){
-        int BankAccount = 10000;
-        const double MonthlyInterest = .5;
-        //const double YearlyInterest = .06; Was not used in the Code.
-        int Months = 0;
-        int Years;
+int main(){
+   int BankAccount = 10000;
+   const double MonthlyInterest = .5;
+   //const double YearlyInterest = .06; Was not used in the Code.
+   int Months = 0;
+   int Years;
 
 
-        while(BankAccount > 0){
-            BankAccount = BankAccount - (BankAccount*MonthlyInterest);
-            cout << "Bank account balance: " << BankAccount << endl;
-            Months = Months + 1;
-            cout << "Months passed: " << Months << endl;
-        }
+   while(BankAccount > 0){
+      BankAccount = BankAccount - (BankAccount*MonthlyInterest);
+      cout << "Bank account balance: " << BankAccount << endl;
+      Months = Months + 1;
+      cout << "Months passed: " << Months << endl;
+    }
 
-        Years = Months/12;
-        cout << "Total years for Bank account to reach 0 is: " << Years << endl;
+      Years = Months/12;
+      cout << "Total years for Bank account to reach 0 is: " << Years << endl;
+    
     }
